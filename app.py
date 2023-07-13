@@ -16,7 +16,7 @@ def get_excel_text(excel_files):
     text = ""
     for excel in excel_files:
         df1= pd.read_excel(excel, header=0, nrows=20000)
-        print(df1)
+        #print(df1)
     return df1.to_string(index=False)
 
 def get_text_chunks(text):
